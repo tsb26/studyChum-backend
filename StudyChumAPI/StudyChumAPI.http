@@ -1,0 +1,6 @@
+@StudyChumAPI_HostAddress = http://localhost:5157
+
+GET {{StudyChumAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
