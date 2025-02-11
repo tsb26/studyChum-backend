@@ -5,18 +5,16 @@
     "ghcr.io/devcontainers/features/node:1": {
       "version": "18"
     },
-    "ghcr.io/devcontainers/features/mssql:1": {}
+    "ghcr.io/devcontainers-contrib/features/mssql:1": {}
   },
   "postCreateCommand": "dotnet restore",
-  "postStartCommand": "dotnet ef database update",  
-  "forwardPorts": [5000, 5157, 1433],
+  "forwardPorts": [5000, 1433],
   "remoteUser": "codespace",
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-dotnettools.csharp",
-        "ms-azuretools.vscode-docker",
-        "ms-mssql.mssql"
+        "ms-azuretools.vscode-docker"
       ]
     }
   }
