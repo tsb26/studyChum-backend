@@ -1,0 +1,21 @@
+{
+  "name": "StudyChum Backend - .NET & SQL",
+  "image": "mcr.microsoft.com/devcontainers/dotnet",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    },
+    "ghcr.io/devcontainers/features/mssql:1": {}
+  },
+  "postCreateCommand": "dotnet restore",
+  "forwardPorts": [5000, 1433],
+  "remoteUser": "codespace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
