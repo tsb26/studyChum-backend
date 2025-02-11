@@ -41,6 +41,7 @@ namespace StudyChumAPI.Controllers
             return Ok(new 
             {
                 Token = user.Token,
+                Username= user.UserName,
                 Message = "Login Success!"
             });
         }
